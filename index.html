@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Education</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e3bbcd98e9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
         <section>
             <nav class="navbar navbar-expand-lg container mt-4">
                 <div class="container-fluid">
-                    <a class="navbar-brand fs-2 fw-bold" href="#">Pro Edu</a>
+                    <a class="navbar-brand fs-2 fw-bold" href="#">Education</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -44,9 +45,6 @@
                             </li>
 
                         </ul>
-                        <form class="d-flex" role="search">
-                            <button class="btn btn-outline-primary" type="submit">Search</button>
-                        </form>
                     </div>
                 </div>
             </nav>
@@ -192,7 +190,7 @@
                 <button class="btn btn-primary me-md-2" type="button">View All</button>
             </div>
             <div id="view-all"
-                class="d-grid gap-2 d-sm-flex justify-content-center mt-4 d-none d-lg-none d-md-none d-sm-block">
+                class="d-grid gap-2 d-sm-flex justify-content-center mt-4 d-sm-block d-lg-none d-md-none ">
                 <button class="btn btn-primary me-md-2" type="button">View All</button>
             </div>
         </section>
@@ -200,7 +198,7 @@
 
         <!-- ready-to-join start -->
         <section style="height: 20rem;" id="subscribe"
-            class="container rounded-3 bg-info d-flex flex-lg-row justify-content-lg-around align-items-lg-center mb-5 flex-md-column justify-content-md-center align-items-md-center flex-sm-column justify-content-sm-center align-items-sm-center">
+            class="container rounded-3 mb-5 bg-info d-lg-flex flex-lg-row justify-content-lg-around align-items-lg-center   d-md-flex flex-md-column justify-content-md-center align-items-md-center d-sm-flex flex-sm-column justify-content-sm-center align-items-sm-center ">
             <div class="text-light fs-2">
                 <h2>LET'S STAY IN TOUCH</h2>
                 <p>Get updates on sale,specials and more</p>
@@ -208,12 +206,15 @@
 
             <!-- Button trigger modal -->
 
-            <button type="button" class="btn bg-light text-info btn-lg fs-2" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
-                Register Now
-            </button>
+            <div>
+                <button type="button" class="btn bg-light text-info btn-lg fs-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Register Now
+                </button>
+            </div>
+            <!-- ready-to-join end -->
 
-            <!-- Modal -->
+            <!-- Modal start-->
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
@@ -234,7 +235,7 @@
                 </div>
             </div>
         </section>
-        <!-- ready-to-join end -->
+        <!-- modal end-->
 
         <!-- Frequently section start -->
         <section class="container mt-5 mb-5">
@@ -248,15 +249,16 @@
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            HTML
+                            Difference between CSS Grid and CSS Flexbox?
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            The HyperText Markup Language or HTML is the standard markup language for documents
-                            designed to be displayed in a web browser. It can be assisted by technologies such as
-                            Cascading Style Sheets and scripting languages such as JavaScript.
+                            Grid is made for two-dimensional layout while Flexbox is for one. This means Flexbox can
+                            work on either row or columns at a time, but Grids can work on both. Flexbox, gives you more
+                            flexibility while working on either element (row or column). HTML markup and CSS will be
+                            easy to manage in this type of scenario.
                         </div>
                     </div>
                 </div>
@@ -264,15 +266,16 @@
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            CSS
+                            Difference between Bootstrap and Tailwind?
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            Cascading Style Sheets is a style sheet language used for describing the presentation of a
-                            document written in a markup language such as HTML or XML. CSS is a cornerstone technology
-                            of the World Wide Web, alongside HTML and JavaScript.
+                            Bootstrap comes with a set of pre-styled responsive, mobile-first components that possess a
+                            definite UI kit. Tailwind CSS uses a set of utility classes to create a neat UI with more
+                            flexibility and uniqueness. Sites created using Bootstrap follow the generic pattern that
+                            makes them look identical.
                         </div>
                     </div>
                 </div>
@@ -280,31 +283,31 @@
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            GitHub
+                            What is CSS Box Model
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            GitHub, Inc. is a provider of Internet hosting for software development and version control
-                            using Git. It offers the distributed version control and source code management
-                            functionality of Git, plus its own features
+                            In web development, the CSS box model refers to how HTML elements are modeled in browser
+                            engines and how the dimensions of those HTML elements are derived from CSS properties. It is
+                            a fundamental concept for the composition of HTML webpages.
                         </div>
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
+                    <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            BootStrap
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            What is a Semantic Tag?
                         </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first
-                            front-end web development. It contains HTML, CSS and JavaScript-based design templates for
-                            typography, forms, buttons, navigation, and other interface components.
+                            The HTML semantics refers to the tags that provide meaning to an HTML page rather than just
+                            presentation. It makes HTML more comprehensible by better defining the different sections
+                            and layout of web pages.
                         </div>
                     </div>
                 </div>
@@ -331,12 +334,20 @@
 
     <footer>
         <div style="height: 20rem;"
-            class="mt-5 bg-dark text-light d-flex flex-column justify-content-end align-items-center">
+            class="mt-5 bg-dark text-light d-flex flex-column justify-content-end align-items-center gy-1">
             <h1 class="fw-bold">
-                Pro Edu
+                Education
             </h1>
             <p>
-                Office 41, Zawaya Buildin, Ghala Muscat,</p>
+                Malibagh Chowdhurypara, Khilgaon, Dhaka</p>
+            <p>Privacy Policy | Terms of use</p>
+
+            <div>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+            </div>
         </div>
     </footer>
     <!-- footer end -->
